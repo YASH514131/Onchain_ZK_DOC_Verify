@@ -1,0 +1,20 @@
+{
+  "name": "zk-doc-auth-circuits",
+  "version": "1.0.0",
+  "description": "ZK-DocAuth Circom circuits for credential verification",
+  "scripts": {
+    "setup": "node scripts/setup.js",
+    "compile": "node scripts/compile.js",
+    "witness": "node scripts/generate_witness.js",
+    "prove": "node scripts/prove.js",
+    "verify": "node scripts/verify.js",
+    "all": "npm run compile && npm run setup && npm run witness && npm run prove && npm run verify"
+  },
+  "dependencies": {
+    "circomlib": "^2.0.5",
+    "snarkjs": "^0.7.3"
+  },
+  "devDependencies": {
+    "circom_tester": "^0.0.19"
+  }
+}
